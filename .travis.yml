@@ -10,6 +10,8 @@ cache:
 env:
   global:
   - GEMFURY_USER=base63
+  # GEMFURY_API_KEY
+  - secure: "Oad+HKZVP1mQubzX/d5fkw5CTzU+Ek5FdCgelnPkEjGKCi+0MDAlpfGCP/XjmHMocXVx/sK6Of8GnAoFYKED17HD21SVbypQoPhHGZ0tRsgQai5PPyW+N3GgmfWKN1PrWKymMbsYIoAG9XvhKw87x1UyGVzo8fGmJfmgAD26+Mg4zPC5GYOZPz+USoxTKL3ttQQBgg/lqY879iZbvG0Za12yCTioRnjZRc5Bzl+/7qBeclPLNf4/gdowkAp/Rlyo15JO1jAuvZMga4Hfe7bwIFCqVqdguHE3/NhwMcamgt4PbHfp94i5EMAQk+HSTb4I8hnqhvUwr5zVkv0XhY8XhO8szL5NrzHI1UD2J0c41/t1uBOPbGCl8XpssLi0/vNe/dNortyQGHLlUaxS64gWsdT+tJII99JQjlxXIOcADAllJtEIr08RjkfsupbXZElNX4vr20+YaVvgFHK7+deEJWf5wk+bhM+btG44iV7Q/4yjQYvpexiF1a2tjwTz27Z8rueR0PHm8ZLDqWSRfV7KzZwgcU8xgoBU20ySr/M5xDn262gSfOTczTWrb5LYHW/vPL7OHR+Lt6qksAacIvWT5DUiPmLAeQ8HRqCgF37XyMFwOy8Zzt/lWL5GKnWcNZtZTwDJ/n8nsKOJzTA++8ifexJc8/Qe+lURrfRRxv45paM="
 
 install:
 - npm install --registry=https://npm-proxy.fury.io/${GEMFURY_API_KEY}/${GEMFURY_USER}/ --progress=false
