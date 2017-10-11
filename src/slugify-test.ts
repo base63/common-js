@@ -5,7 +5,7 @@ import { slugify } from './slugify'
 
 
 describe('slugify', () => {
-    var cases = [
+    const Cases = [
         ['hello', 'hello'],
         ['hello123', 'hello123'],
         ['is it me youre looking for', 'is-it-me-youre-looking-for'],
@@ -13,7 +13,7 @@ describe('slugify', () => {
         ['Capital idea', 'capital-idea']
     ];
 
-    for (let [before, after] of cases) {
+    for (let [before, after] of Cases) {
         it (`should turn "${before}" into "${after}`, () => {
             expect(slugify(before)).to.equal(after);
         });
