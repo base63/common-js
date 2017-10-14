@@ -1,6 +1,6 @@
 {
   "name": "@base63/common-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Things shared between packages. Isomorphic, of course.",
   "author": "Base63 team",
   "scripts": {
@@ -36,7 +36,7 @@
     "slugify": "=1.2.1"
   },
   "devDependencies": {
-    "@base63/togemfury": "=0.0.0",
+    "@base63/togemfury": "=0.0.1",
     "@types/chai": "=4.0.4",
     "@types/es6-promise": "=0.0.33",
     "@types/istanbul": "=0.4.29",
