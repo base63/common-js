@@ -1,13 +1,15 @@
-/** @module context */
+/** @module Defines {@link Context} and associated helpers. */
 
 /**
  * @enum
  * The context of a piece of code. Sometimes you want code to behave differently if
  * you're running it in a server (that is, a computer controlled by the company), or on
- * a client (that is, a computer controlled by a user).
+ * a client (that is, a computer controlled by a user), and this enum is useful for that.
  */
 export enum Context {
+    /** Represents the context of code running on a client. */
     Client,
+    /** Represents the context of code running on a server. */
     Server
 }
 
@@ -16,7 +18,7 @@ export enum Context {
  * Transform a string representation of a context into a {@link Context} value.
  * @param context - The string representation of the context.
  * @returns A {@link Context} value corresponding to the string representation.
- * @throws {Error} If the string can't be transformed to a {@link Context} value.
+ * @throws If the string can't be transformed to a {@link Context} value, throws an {@link Error}.
  */
 export function parseContext(context: string | undefined): Context {
     if (context === undefined)
