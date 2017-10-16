@@ -39,7 +39,7 @@ export const StandardCurrencies: any = {
 
 
 /**
- * A Marshaller for {@link Currency} objects.
+ * A {@link Marshaller} for {@link Currency} objects.
  */
 export class CurrencyMarshaller extends BaseStringMarshaller<Currency> {
     build(a: string): Currency {
