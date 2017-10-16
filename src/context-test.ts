@@ -1,7 +1,12 @@
 import { expect } from 'chai'
 import 'mocha'
 
-import { Context, parseContext, isServer } from './context'
+import {
+    Context,
+    isClient,
+    isServer,
+    parseContext
+} from './context'
 
 
 describe('Context', () => {
@@ -24,6 +29,16 @@ describe('Context', () => {
 
         it('should throw on unknown context', () => {
             expect(() => parseContext('DEV')).to.throw('Invalid context DEV');
+        });
+    });
+
+    describe('isClient', () => {
+        it('should recognize client as client', () => {
+            expect(isClient(Context.Client)).to.be.true;
+        });
+
+        it('should recognize client as non-client', () => {
+            expect(isClient(Context.Server)).to.be.false;
         });
     });
 
