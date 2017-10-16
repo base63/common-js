@@ -66,6 +66,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Define <a href="../enums/_env_.env.html">Env</a> and associated helpers.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -100,16 +107,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/base63/common-js/blob/0a5b8c5/src/env.ts#L28">env.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/base63/common-js/blob/120f671/src/env.ts#L47">env.ts:47</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Transforms an <a href="../enums/_env_.env.html">Env</a> value to it&#39;s string representation.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The environment value.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>A string representation of @see env.</p>
 						</li>
 					</ul>
 				</section>
@@ -123,16 +139,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/base63/common-js/blob/0a5b8c5/src/env.ts#L42">env.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/base63/common-js/blob/120f671/src/env.ts#L66">env.ts:66</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether an environment is local or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The given environment.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>A boolean value, indicating whether this is the <a href="../enums/_env_.env.html#local">Env.Local</a> environment or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -146,16 +171,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/base63/common-js/blob/0a5b8c5/src/env.ts#L47">env.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/base63/common-js/blob/120f671/src/env.ts#L76">env.ts:76</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether an environment is &quot;server-side&quot; or not.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The given environment.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>A boolean value, indicating whether this is the <a href="../enums/_env_.env.html#staging">Env.Staging</a> or <a href="../enums/_env_.env.html#prod">Env.Prod</a> environments.</p>
 						</li>
 					</ul>
 				</section>
@@ -169,16 +203,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/base63/common-js/blob/0a5b8c5/src/env.ts#L9">env.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/base63/common-js/blob/120f671/src/env.ts#L23">env.ts:23</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Transform a string representation of an environment into a <a href="../enums/_env_.env.html">Env</a> value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>If the string can&#39;t be transformed to a <a href="../enums/_env_.env.html">Env</a> value, throws an {@link Error}.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>env: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The string representation of the environment.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h4>
+							<p>A <a href="../enums/_env_.env.html">Env</a> value corresponding to the string representation.</p>
 						</li>
 					</ul>
 				</section>

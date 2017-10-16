@@ -1,7 +1,6 @@
-/** @module Defines {@link Context} and associated helpers. */
+/** Defines {@link Context} and associated helpers. */
 
 /**
- * @enum
  * The context of a piece of code. Sometimes you want code to behave differently if
  * you're running it in a server (that is, a computer controlled by the company), or on
  * a client (that is, a computer controlled by a user), and this enum is useful for that.

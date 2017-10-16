@@ -1,4 +1,4 @@
-/** @module Defines {@link Currency} and associated helpers. */
+/** Defines {@link Currency} and associated helpers. */
 
 /** Imports. Also so tsdoc works correctly.  */
 
