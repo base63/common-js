@@ -14,6 +14,32 @@ export enum Env {
     Prod
 }
 
+
+/**
+ * Transform a string representation of an env into a {@link Env} value.
+ * @param env - The string representation of the environment.
+ * @returns A {@link Env} value corresponding to the string representation.
+ * @throws If the string can't be transformed to a {@link Env} value, throws an {@link Error}.
+ */
+export function parseEnv(env: string | undefined): Env {
+    if (env === undefined)
+        throw new Error('Environment is not defined');
+
+    switch (env.toUpperCase()) {
+        case 'LOCAL':
+            return Env.Local;
+        case 'TEST':
+            return Env.Test;
+        case 'STAGING':
+            return Env.Staging;
+        case 'PROD':
+            return Env.Prod;
+        default:
+            throw new Error(`Invalid environment ${env}`);
+    }
+}
+
+
 /**
  * @returns A string representation of env.
  */
