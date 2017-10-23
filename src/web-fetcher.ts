@@ -2,6 +2,7 @@
 
 /**
  * The common interface for objects which can do a [fetch]{@link https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API}.
+ * Useful for inversion of control patterns and testing.
  */
 export interface WebFetcher {
     /**
