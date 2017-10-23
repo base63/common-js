@@ -1,7 +1,6 @@
 /** Defines {@link Currency} and associated helpers. */
 
 /** Imports. Also so typedoc works correctly. */
-
 import { BaseStringMarshaller, ExtractError } from 'raynor'
 
 /**
