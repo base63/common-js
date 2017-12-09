@@ -1,6 +1,6 @@
 {
   "name": "@base63/common-js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Things shared between packages. Isomorphic, of course.",
   "author": "Base63 team",
   "scripts": {
@@ -29,7 +29,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "es6-promise": "=4.1.1",
     "iso-639-1": "=1.3.0",
     "locale-code": "=1.1.1",
     "raynor": "=0.12.0",
