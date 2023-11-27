@@ -28,7 +28,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "iso-3166-1-alpha-2": "1.0.0",
+        "iso-3166-1-alpha-2": "1.0.1",
         "iso-639-1": "=2.0.1",
         "locale-code": "=1.1.1",
         "raynor": "=0.14.0",
